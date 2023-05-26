@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CambioNivel : MonoBehaviour
+public class Enemigo : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Bola")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(0);
         }
     }
 }
